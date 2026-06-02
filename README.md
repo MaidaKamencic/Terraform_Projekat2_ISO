@@ -19,14 +19,13 @@ terraform-recipe/
 
 ---
 ## Arhitektura
-
 VPC - sa 2 public i 2 private subneta u us-east-1a i us-east-1b
 Frontend — React aplikacija na EC2 instancama u public subnetima iza ALB-a
 Backend — Flask aplikacija na EC2 instancama u public subnetima iza ALB-a
 RDS — PostgreSQL 16 baza u private subnetima
 S3 — bucket za statičke fajlove (logo)
 Application Load Balancer — Load Balancer za frontend i backend instance
----
+
 
 ## Preduslovi
 Potrebno je imati instaliran Terrafom i AWS CLI , ukoliko nemate instalirane alate, možete ih preuzeti sa zvaničnih stranica:
@@ -105,8 +104,9 @@ rds_port = 5432
 s3_bucket_name = "recipes-app-static-assets"
 
 Napomena:
+
 Potrebno je sačekati oko 1 minute nakon terraform apply prije otvaranja alb_url. Ako otvorite link prerano, moguće je da dobijete grešku 502 Bad Gateway dok se svi servisi (posebno RDS i containeri) ne podignu.
----
+
 
 ## Uništavanje infrastrukture
 
