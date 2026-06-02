@@ -117,6 +117,3 @@ Potrebno je sačekati oko 1 minute nakon terraform apply prije otvaranja alb_url
 ```bash
 terraform destroy
 ```
-
-Snimak ručnog deploymenta i tehničke dokumentacije je dostupan preko sljedećeg linka:
-https://drive.google.com/drive/folders/1ibcg4D4Yzpk84zF_JRH9ChIxpfNYxkHh?usp=drive_link
