@@ -19,6 +19,7 @@ terraform-recipe/
 
 ---
 ## Arhitektura
+
 VPC - sa 2 public i 2 private subneta u us-east-1a i us-east-1b
 Frontend — React aplikacija na EC2 instancama u public subnetima iza ALB-a
 Backend — Flask aplikacija na EC2 instancama u public subnetima iza ALB-a
@@ -94,14 +95,17 @@ S3 bucket je zakomentiran u `main.tf` zbog ograničenja AWS Academy sandboxa. S3
 
 ## Outputi
 
-Nakon uspješnog `terraform apply`:
+Nakon uspješnog `terraform apply`
+
 Dobit ćeš output vrijednosti poput:
+
 alb_url = "ovdje_je_url_za_aplikaciju"
 ec2_instance_1_public_ip = "a.b.c.d"
 ec2_instance_2_public_ip = "e.f.g.h"
 rds_endpoint = "ovdje_je_url_za_rds"
 rds_port = 5432
 s3_bucket_name = "recipes-app-static-assets"
+
 
 Napomena:
 
